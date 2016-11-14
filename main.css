@@ -11,6 +11,7 @@
     font-size: 70px;
     padding: 40px;
     text-align: left;
+    transition: all 2s ease;
 }
 #greeting.alt {
 	width: 600px;
@@ -24,7 +25,36 @@
 	padding: 200px 60px 60px 60px;
 	text-align: right;
 }
+@keyframes bounce {
+	0%{
+		position: relative;
+		top: 0px;
+	}
+	50%{
+		position: relative;
+		top: 0px;
+	}
+	100%{
+		position: initial;
+		top: 0px;
+	}
+}
 
+#greeting.animated{
+	animation-name: bounce;
+	animation-duration: 7s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+	animation-delay: 0s;
+}
+
+#greeting.rotate{
+	-webkit-transform: rotateY(-720deg);
+	-moz-transform: rotateY(-720deg);
+	transform: rotateY(-7200000deg);
+}
 
 
 

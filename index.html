@@ -2,12 +2,19 @@
 <html>
 <head>
 	<title>CSS Animations</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light|Shrikhand" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 
-	<div id="greeting">Hello Friend.</div>
+	<img src="http://previews.123rf.com/images/djslavic/djslavic0904/djslavic090400006/4593235-The-young-guy-model-in-a-shirt-developing-from-a-wind-praying-looks-at-you-Stock-Photo.jpg" id="greeting">.</div>
+
+	<script>
+		$("#greeting").click(function(){
+			$("#greeting").toggleClass("rotate animated");
+		});
+	</script>
 	
 </body>
 </html>
